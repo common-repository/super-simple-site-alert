@@ -1,0 +1,323 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+body[class*='site-alert'] {
+  background: #ffffff;
+}
+
+.site-alert-admin {
+    width: 100%;
+}
+
+.site-alert-admin .row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.site-alert-admin .row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .site-alert-admin .row .col-sm-6 {
+    width: 50%;
+    flex: 1 0 20%;
+    padding: 0 0.5rem 1rem;
+  }
+}
+
+.site-alert-admin .page-icon {
+   font-size: 30px;
+   margin-right: 10px;
+}
+
+.site-alert-admin h1,
+.site-alert-admin h2 {
+    display: block !important;
+}
+
+.site-alert-admin .show-in-all-sites .site-exclude,
+.site-alert-admin .location-wrapper,
+.site-alert-admin .priority-color-picker {
+    display: none;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    background: #f0f0f0;
+}
+
+.site-alert-admin .show-in-all-sites .site-exclude .groups-wrapper {
+    padding: 10px;
+    margin: 10px 0;
+    background: #fff;
+}
+
+.site-alert-admin .show-in-all-sites .site-exclude .groups-wrapper .group {
+    margin: 0 2px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.site-alert-admin .show-in-all-sites .site-exclude .groups-wrapper .group.selected {
+    border-color: lightblue;
+    background: lightblue;
+    color: black;
+}
+
+.site-alert-admin .show-in-all-sites .site-exclude #search-sites {
+    width: 300px;
+    height: 30px;
+    max-width: 100%;
+}
+
+.site-alert-admin .show-in-all-sites .site-exclude .list {
+    margin-top: 10px;
+    column-count: 4;
+    padding: 0;
+}
+
+.site-alert-admin .location .custom-location-select {
+    display: none;
+}
+
+.site-alert-table {
+    width: 100%;
+    border-bottom: 1px solid rgba(0 0 0 / 0.2) !important;
+    font-size: 14px;
+}
+
+.site-alert-admin .dataTables_wrapper .dataTables_filter input {
+  padding: 0 5px;
+}
+
+.site-alert-admin .dataTables_info {
+    font-size: 14px;
+}
+
+.site-alert-admin .dataTables_wrapper {
+  padding: 0 10px 0;
+}
+
+.site-alert-admin .site-alert-table {
+  width: 100% !important;
+}
+
+.site-alert-admin .site-alert-table thead tr td {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0 0 0 / 0.2) !important;
+}
+
+.site-alert-admin .site-alert-table tr {
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+    padding: 10px 2px;
+}
+
+.site-alert-admin .site-alert-table tr td {
+    padding: 10px 2px;
+}
+
+.site-alert-admin .site-alert-table tbody tr:nth-child(even) {
+    /*background-color: rgba(0,0,0, 0.05);*/
+}
+
+.site-alert-admin .site-alert-table .center {
+    text-align: center;
+}
+
+/* START */
+/* The switch - the box around the slider */
+.site-alert-admin .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.site-alert-admin .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.site-alert-admin .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.site-alert-admin .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.site-alert-admin input[type=text] {
+  width: 100%;
+}
+
+.site-alert-admin input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.site-alert-admin input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.site-alert-admin input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.site-alert-admin .slider.round {
+  border-radius: 34px;
+}
+
+.site-alert-admin .slider.round:before {
+  border-radius: 50%;
+}
+
+/* END Switch Button */
+
+.site-alert-admin .options-control {
+    cursor: pointer;
+}
+
+.site-alert-admin .options {
+    display: none;
+}
+
+.site-alert-admin hr {
+    opacity: 0.5;
+    margin: 10px 0;
+}
+
+.site-alert-admin .priority-color-picker {
+    display: none;
+}
+
+/* Site Groups */
+.site-alert-groups {
+
+}
+
+.site-alert-groups .groups-wrapper {
+
+}
+
+.site-alert-groups .groups-wrapper .groups {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.site-alert-groups .groups-wrapper .groups .group {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 33.33%;
+}
+
+.site-alert-groups .groups-wrapper .groups .group ._wrap {
+    padding: 15px;
+    margin: 5px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid rgba(0 0 0 / 0.1);
+}
+
+.site-alert-groups .groups-wrapper .groups .group.selected ._wrap {
+    background: lightblue;
+}
+
+.site-alert-groups .groups-wrapper .create-group-title {
+    width: 300px;
+    max-width: 100%;
+    margin-right: 5px;
+}
+
+.site-alert-groups .groups-wrapper .create-group-title.required {
+    border-color: darkred;
+}
+
+.site-alert-groups .groups-wrapper .groups .group .group-title {
+    background: #fff;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.site-alert-groups .groups-wrapper .groups .group .group-title.success {
+    border-color: green;
+}
+
+.site-alert-groups .groups-wrapper .groups .group .delete {
+    font-size: .7em;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid gray;
+    color: gray;
+    padding: 2px;
+}
+
+.site-alert-groups .groups-wrapper .groups .group .delete:hover {
+    background: darkred;
+    border: 1px solid darkred;
+    color: #fff;
+}
+
+.site-alert-groups .groups-wrapper .groups .group .delete i {
+    vertical-align: middle;
+    margin: 3px;
+}
+
+/* END Site Groups */
+
+.site-alert-groups .sites-wrapper {
+
+}
+
+.site-alert-groups .sites-wrapper ul.list {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.site-alert-groups .sites-wrapper ul.list li {
+    margin: 5px 0;
+}
+
+.site-alert-groups .sites-wrapper ul.list li:hover {
+    cursor: pointer;
+}
+
+.site-alert-groups .sites-wrapper ul.list li span {
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 60px;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.site-alert-groups .sites-wrapper ul.list li.ui-selected span,
+.site-alert-groups .sites-wrapper ul.list li.ui-selecting span {
+    background: lightblue;
+}
+
+.site-alert-groups .sites-wrapper ul.list li.assoc {
+
+}

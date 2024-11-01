@@ -1,0 +1,173 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+.alert-icon-info::before,
+.alert-icon-exclamation::before,
+.alert-icon-gear::before {
+     font-family: "dashicons";
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 10px;
+     font-size: 30px;
+ }
+
+.alert-icon-exclamation::before {
+     content: "\f534";
+ }
+.alert-icon-gear::before {
+     content: "\f111";
+ }
+.alert-icon-info::before {
+    content: "\f14c";
+}
+
+.alert-icon-info,
+.alert-icon-exclamation,
+.alert-icon-gear {
+    transition: padding 200ms;
+    padding-left: 45px !important;
+}
+
+.alerteditor {
+    margin: 10px;
+    font-family: "Arial";
+}
+
+.alerteditor p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-alert {
+    position: relative;
+    padding: 10px 30px;
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px auto;
+    border: 2px solid rgba(0,0,0, 0.3);
+    /*box-shadow: 0 0 5px rgba(0,0,0, 0.3);*/
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.site-alert.sticky-footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    width: initial;
+    height: 50px;
+    font-size: initial;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    max-width: 50%;
+    z-index: 999;
+}
+
+.site-alert.sticky-footer.expand {
+    height: initial;
+    z-index: 9999;
+}
+
+.site-alert.sticky-footer.truncate {
+    padding: 0 !important;
+    z-index: 999;
+}
+
+.site-alert.sticky-footer.truncate i.sa-closed {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-alert.sticky-footer.truncate::before,
+.site-alert.sticky-footer.truncate .site-alert-content,
+.site-alert.sticky-footer i.sa-closed {
+    display: none;
+}
+
+.site-alert.sticky-footer i.sa-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+}
+
+.site-alert.sticky-footer i.sa-close:hover {
+    opacity: 0.5;
+}
+
+.site-alert.sticky-footer .site-alert-content .short-length {
+    display: block;
+}
+
+.site-alert.sticky-footer.expand .site-alert-content .short-length {
+    display: none;
+}
+
+.site-alert.sticky-footer.expand .site-alert-content .full-length {
+    display: block;
+}
+
+.site-alert.sticky-footer .site-alert-content .full-length {
+    display: none;
+}
+
+.site-alert.ispopup {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.site-alert .modal-footer {
+    border-top: 1px solid rgba(0,0,0, 0.1);
+    justify-content: flex-start;
+}
+
+/* COLORS */
+.site-alert.pl-low {
+    color: #41464b;
+    background-color: #e2e3e5;
+    border-color: #d3d6d8;
+}
+
+.site-alert.pl-medium {
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+.site-alert.pl-high {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+.site-alert.pl-emergency {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.site-alert .modal-body {
+  max-height: 600px;
+}
+
+.site-alert-anchor span {
+  opacity: 0.3;
+}
+
+.site-alert-anchor .site-alert {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
